@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PepegaKBD</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel = "stylesheet" href = "../CSS/main.css">
+<link rel = "stylesheet" href = "../CSS/Cart.css">
+<script src="../JS/HideNav.js"></script>
+</head>
+
+<div id="navbar">
+  <h1><a href="index.html" class="split">PepegaKBD</a></h1>
+  <a href = "checkout.html"> <img src="../Content/cart.png"> </a>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="../Content/account.png"> </button>
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" onsubmit="return vallogin()" method="post">
+      
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text"  id="login" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+      <a href="register.html"> Not a member ? click here to register ! </a>
+    </form>
+    
+  </div>
+  <a href="about.html">About Us</a>
+  <a href="Shop.html">Shop</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form>
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" >
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" >
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" >
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" >
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" >
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" >
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" >
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" >
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" >
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" >
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" onclick="out()" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function out() {
+        alert("Moving on to Checkout Review");
+      }
+  </script>
+
+
+<footer>
+    <h1>Pepega Keyboards</h1>
+    <p><br>Pepega@keyboards.xyz</a></p>
+  </footer>
+</footer>
+</html>

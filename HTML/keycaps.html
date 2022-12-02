@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PepegaKBD</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel = "stylesheet" href = "../CSS/main.css">
+<link rel = "stylesheet" href = "../CSS/shop4.css">
+<script src="../JS/HideNav.js"></script>
+</head>
+
+<div id="navbar">
+    <h1><a href="index.html" class="split">PepegaKBD</a></h1>
+    <a href = "checkout.html"> <img src="../Content/cart.png"> </a>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="../Content/account.png"> </button>
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" onsubmit="return vallogin()" method="post">
+        
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text"  id="login" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+        <a href="register.html"> Not a member ? click here to register ! </a>
+      </form>
+      
+    </div>
+    <a href="about.html">About Us</a>
+    <a href="Shop.html">Shop</a>
+    <a href="index.html">Home</a>
+</div>
+
+<div class ="main">
+    <a>Switches</a>
+</div>
+
+<div class="cats">
+    <div class="box">
+        <div class="display">
+            <a><img src ="../Content/cap1.webp"></a>
+            <h1>Little Ghost</h1>
+        </div>
+    </div>
+    <div class="box">
+        <div class="display">
+            <a></a><img src ="../Content/cap2.webp"></a>
+            <h1>Matcha</h1>
+        </div>    
+    </div>
+    <div class="box">
+        <div class="display">
+            <a><img src ="../Content/cap3.webp"></a>
+            <h1>Sakura</h1>
+        </div>    
+    </div>
+
+    
+
+</div>
+<div class="bottom-row">
+</div>
+
+
+<footer>
+    <h1>Pepega Keyboards</h1>
+    <p><br>Pepega@keyboards.xyz</a></p>
+</footer>
+</html>

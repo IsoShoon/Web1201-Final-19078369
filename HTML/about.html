@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PepegaKBD</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel = "stylesheet" href = "../CSS/main.css">
+<link rel = "stylesheet" href = "../CSS/about.css">
+<script src="../JS/HideNav.js"></script>
+<script src = "../JS/contact.js"></script>
+</head>
+
+<div id="navbar">
+  <h1><a href="index.html" class="split">PepegaKBD</a></h1>
+  <a href = "checkout.html"> <img src="../Content/cart.png"> </a>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="../Content/account.png"> </button>
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" onsubmit="return vallogin()" method="post">
+      
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text"  id="login" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+      <a href="register.html"> Not a member ? click here to register ! </a>
+    </form>
+    
+  </div>
+  <a href="about.html">About Us</a>
+  <a href="Shop.html">Shop</a>
+  <a href="index.html">Home</a>
+</div>
+
+<div class="abt">
+  <h1>About Us</h1>
+  <p>Established during the pandamic in 2021 , pepega keyboards was founded on the large growing intrest of the custom keyboard space within malaysia</p>
+</div>
+
+<div class="container">
+  <h1>Contact Us Here</h1>
+  <form name = "form" onsubmit="return val()" method = "post">
+
+    <label for="Name">Name</label>
+    <input type="text" placeholder="Your Name..">
+
+    <label for="Email">Email</label>
+    <input type="text" id="Email" placeholder="Your Email..">
+
+    <label for="Subject">Subject</label>
+    <input type="text" placeholder="Your Subject..">
+
+    <label for="subject">Subject</label>
+    <textarea placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<footer>
+    <h1>Pepega Keyboards</h1>
+    <p><br>Pepega@keyboards.xyz</a></p>
+  </footer>
+</footer>
+</html>
